@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Generate and Share Your Resume</h1>
+        <form id="resumeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="education">Education:</label>
+            <input type="text" id="education" placeholder="Enter your education" required>
+
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" placeholder="Enter your work experience" required></textarea>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter your skills, separated by commas" required></textarea>
+
+            <label for="profilePic">Upload Profile Picture:</label>
+            <input type="file" id="profilePic" accept="image/*" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resumeOutput" class="resume-output"></div>
+
+    <div class="action-buttons">
+        <button id="shareButton">Share Resume Link</button>
+        <button id="downloadButton">Download as PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
